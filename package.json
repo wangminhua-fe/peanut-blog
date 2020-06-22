@@ -1,0 +1,31 @@
+{
+  "name": "peanut-blog",
+  "version": "0.0.1",
+  "description": "基于vuepress的个人博客",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peanut-dev/peanut-blog.git"
+  },
+  "keywords": [
+    "peanut",
+    "blog",
+    "vuepress"
+  ],
+  "author": "Marshall <wmhayt228@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/peanut-dev/peanut-blog/issues"
+  },
+  "homepage": "https://github.com/peanut-dev/peanut-blog#readme",
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.5.2",
+    "@vuepress/plugin-nprogress": "^1.5.2",
+    "@vuepress/plugin-pwa": "^1.5.2",
+    "vuepress": "^1.5.2"
+  }
+}
