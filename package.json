@@ -26,6 +26,10 @@
     "@vuepress/plugin-back-to-top": "^1.5.2",
     "@vuepress/plugin-nprogress": "^1.5.2",
     "@vuepress/plugin-pwa": "^1.5.2",
-    "vuepress": "^1.5.2"
+    "vuepress": "^1.5.2",
+    "vuepress-plugin-comment": "^0.7.3"
+  },
+  "dependencies": {
+    "valine": "^1.4.14"
   }
 }

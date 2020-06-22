@@ -8,11 +8,12 @@ module.exports = {
   ],
 
   themeConfig:{
+    sidebar: 'auto',
     nav: [
-      {text: "主页", link: "/"      },
-      { text: "JavaScript", link: "/javascript/"},
-      { text: "CSS", link: "/css/"},
-      { text: "HTML", link: "/html/"},
+      { text: "主页", link: "/" },
+      { text: "JavaScript", link: "/javascript/" },
+      { text: "CSS", link: "/css/" },
+      { text: "HTML", link: "/html/" },
       { text: "面试问题", link: "/interview/" }
     ]
   },
@@ -23,6 +24,18 @@ module.exports = {
       serviceWorker: true,
       updatePopup: true
     },
+    [
+      'vuepress-plugin-comment',
+      {
+        choosen: 'valine', 
+        // options选项中的所有参数，会传给Valine的配置
+        options: {
+          el: '#valine-vuepress-comment',
+          appId: 'Gnm0Svrw8dNXSobbLWNvRMlJ-gzGzoHsz',
+          appKey: 'wQhs4qVqDfzKI79KCAK4AogN'
+        }
+      }
+    ],
     ["@vuepress/back-to-top"], // 返回顶部
     ["@vuepress/nprogress"],   // 加载进度条
   ]
