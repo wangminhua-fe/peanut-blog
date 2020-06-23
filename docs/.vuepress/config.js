@@ -8,14 +8,29 @@ module.exports = {
   ],
 
   themeConfig:{
-    sidebar: 'auto',
     nav: [
       { text: "主页", link: "/" },
       { text: "JavaScript", link: "/javascript/" },
       { text: "CSS", link: "/css/" },
       { text: "HTML", link: "/html/" },
-      { text: "面试问题", link: "/interview/" }
-    ]
+      { text: "前端框架", items: [ 
+          { text: "Vue", link:"/frame/vue/"},
+          { text: "React", link:"/frame/react/"},
+        ]
+      },
+      { text: "面试问题", link: "/interview/" },
+      {text: 'GitHub', link: 'https://github.com/peanut-dev'}
+    ],
+    sidebar:{
+      // docs文件夹下面的accumulate文件夹 文档中md文件 书写的位置(命名随意)
+      '/javascript/': [
+        '/javascript/', // accumulate文件夹的README.md 不是下拉框形式
+        // '/javascript/article-01',
+        // '/javascript/article-02',
+        // '/javascript/article-03',
+      ],
+    },
+    sidebarDepth: 2, // 侧边栏显示2级
   },
 
   plugins:[
